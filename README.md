@@ -56,12 +56,13 @@ Create a JSON-File which has the following mandatory fields and change it to you
     ]
 }
 ```
-
+Note: Memory and disks parameter are in GB
 Note: If you use a template, which sets specific attributes like nics the tool may not work. For test purposes use template "Blank".
 
-In order to authenticate at the rhevm you will need a ca-file. Usually you get this ca-file under /etc/pki/ovirt-engine/ on the rhevm.
+In order to authenticate at the rhevm you will need a ca-file. Usually you get this ca-file under /etc/pki/ovirt-engine/ on the rhevm. Place the ca-file in the same directory where the tool is located.
 
 ## Usage
+The tool needs to be executed with sudo.
 ```
 [user:host]$ sudo python rhev-create-vm -c example.json
 Password:
