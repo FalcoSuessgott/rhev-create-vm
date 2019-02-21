@@ -18,7 +18,7 @@ git clone hhttps://github.com/FalcoSuessgott/rhev-create-vm
 ```
 
 ## Prerequisites
-Create a JSON-File which has the following mandatory fields:
+Create a JSON-File which has the following mandatory fields and change it to you needs:
 
 ```
 {
@@ -56,6 +56,8 @@ Create a JSON-File which has the following mandatory fields:
     ]
 }
 ```
+
+Note: If you use a template, which sets specific attributes like nics the tool may not work. For test purposes use template "Blank".
 
 In order to authenticate at the rhevm you will need a ca-file. Usually you get this ca-file under /etc/pki/ovirt-engine/ on the rhevm.
 
